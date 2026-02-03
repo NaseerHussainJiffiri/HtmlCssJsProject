@@ -5,7 +5,9 @@
 }
 
 :root {
-    --primary-color: greenyellow;
+    --primary-green: greenyellow;
+    --secondary-green: hsl(84, 100%, 15%);
+
 }
 
 html{
@@ -24,7 +26,7 @@ body {
 
 .main-header {
     max-width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-green);
 }
 
 .main-header .container {
@@ -45,3 +47,46 @@ body {
     background: url(img/unsplashphoto-1591779051696-1c3fa1469a79.avif) no-repeat center center;
 }
 
+.hero-section {
+    height: 85vh;
+    width: 100%;
+    background: url(img/unsplashphoto-1591779051696-1c3fa1469a79.avif) no-repeat center center;
+}
+
+.hero-section  {
+    position: relative;
+}
+
+.hero-section .container {
+    height: inherit;
+}
+
+.hero-section .hero-content {
+    padding: 50px;
+    height: 400px;
+    max-width: 350px;
+    align-self: self-end;
+    background-color: var(--primary-green);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: .6rem;
+}
+
+.btn {
+    padding: .6rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.knwo-more {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-green);
+}
