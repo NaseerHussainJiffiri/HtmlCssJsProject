@@ -5,7 +5,9 @@
 }
 
 :root {
-    --primary-color: greenyellow;
+    --primary-green: greenyellow;
+    --secondary-green: hsl(84, 100%, 15%);
+
 }
 
 html{
@@ -24,7 +26,7 @@ body {
 
 .main-header {
     max-width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-green);
 }
 
 .main-header .container {
@@ -55,8 +57,30 @@ body {
 
 .hero-section .hero-content {
     padding: 50px;
-    height: 500px;
+    height: 400px;
     max-width: 350px;
     align-self: self-end;
-    background-color: var(--primary-color);
+    background-color: var(--primary-green);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: .6rem;
+}
+
+.btn {
+    padding: .6rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.knwo-more {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-green);
 }
