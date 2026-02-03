@@ -90,3 +90,18 @@ body {
     font-weight: 600;
     color: var(--secondary-green);
 }
+
+.knwo-more:hover {
+    
+    animation: btnColor .5s ease-in-out forwards;
+}
+
+@keyframes btnColor {
+    from{
+        background-color: white;
+    }
+    to{
+        color: white;
+        background-color: var(--secondary-green);
+    }
+}
