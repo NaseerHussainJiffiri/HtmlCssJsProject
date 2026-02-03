@@ -45,3 +45,16 @@ body {
     background: url(img/unsplashphoto-1591779051696-1c3fa1469a79.avif) no-repeat center center;
 }
 
+.hero-section  {
+    position: relative;
+}
+
+.hero-section .hero-content {
+    padding: 50px;
+    position: absolute;
+    height: 500px;
+    max-width: 300px;
+    left: 20%;
+    bottom: 0;
+    background-color: var(--primary-color);
+}
