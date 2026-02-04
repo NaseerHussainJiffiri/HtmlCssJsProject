@@ -29,17 +29,34 @@ body {
     background-color: var(--primary-green);
 }
 
+.main-header .logo h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 .main-header .container {
     justify-content: space-between;
     align-items: center;
     height: 60px;
 }
 
+
 .nav-menu .list {
     list-style: none;
     display: flex;
     gap: 25px;
+    height: inherit;
 }
+
+.nav-menu .list a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-menu .list a:hover {
+    color: var(--secondary-green);
+    transition: color .3s ease-in-out;
+}
+
 
 .hero-section {
     height: 100vh;
@@ -72,11 +89,13 @@ body {
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: .4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .hero-content h3 {
     font-size: 1.4rem;
     margin-bottom: .8rem;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
 }
 
 .hero-content p {
@@ -86,7 +105,7 @@ body {
 }
 
 .btn {
-    padding: .8rem 1rem;
+    padding: .8rem 1.3rem;
     border: none;
     border-radius: 5px;
 }
