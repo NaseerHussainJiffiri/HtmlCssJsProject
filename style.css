@@ -151,11 +151,15 @@ body {
     font-family: var(--primary-font);
 }
 
-.cards, .team-cards{
+.cards{
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(4 , 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 2rem;
+}
+
+.team-cards {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .service.card, .team-member {
