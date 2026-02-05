@@ -150,12 +150,17 @@ body {
     padding-top: .6rem;
     font-family: var(--primary-font);
 }
-
+.team-section, .service-section, .hero-section {
+    margin-bottom: 2rem;
+}
 .cards{
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 2rem;
+}
+
+.service-img {
+    height: 200px;
 }
 
 .team-cards {
@@ -188,9 +193,9 @@ body {
     position: relative;
 }
 
-.member-img {
-    overflow: hidden;
-    position: relative;
+.member-img img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .member-img::before {
