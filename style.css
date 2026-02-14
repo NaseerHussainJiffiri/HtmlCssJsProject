@@ -19,7 +19,7 @@ body {
 }
 
 /* sECTIONS */
-section {
+section.section {
     margin-bottom: 2rem;
 }
 
@@ -238,8 +238,8 @@ section {
 /* FOOTER DESIGN */
 
 .main-footer {
+    position: relative;
     background-color: var(--secondary-green);
-    height: 60vh;
 }
 
 .main-footer .container {
@@ -249,7 +249,6 @@ section {
 }
 
 .footer-info {
-    /* border: black 1px solid; */
     display: flex;
     flex-flow: column wrap;
     width: 400px;
@@ -289,4 +288,13 @@ section {
 .footer-links .list a {
     text-decoration: none;
     color: white;
+}
+
+.main-footer::after {
+    content: '';
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    background-color: var(--primary-green);
+    bottom: 0;
 }
